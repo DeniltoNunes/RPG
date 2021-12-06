@@ -2,20 +2,80 @@
 <html lang="pt-br">
 
 <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ficha Ivo</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ficha Ivo</title>
+  <style>
+    .preto {
+      background-color: #000
+    }
+
+    .cinza {
+      background-color: #d5d5d5
+    }
+
+    .vermelho {
+      background-color: #660000;
+    }
+
+    .seila {
+      background-color: #fbcf6d;
+    }
+  </style>
 </head>
 
-<body class="bg-dark">
-    <header>
-        <div class="text-center mt-3">
-            <img src="assets/Logo.png" width='150px'>
+<body class="preto">
+  <header>
+    <div class="text-center mt-3">
+      <img src="assets/Logo.png" width='150px'>
+    </div>
+  </header>
+
+  <div class="container-fluid">
+    <div class="mt-2">
+      <div class="row">
+        <div class="col-6">
+          <div class="text-center">
+            <label class="btn btn-default">
+              <img src="assets/placeholder.png" width="150px">
+              <input type="file" hidden>
+            </label>
+          </div>
+          <div class="card-body">
+            <p class="text-white">Vida Atual</p>
+            <h4 class="text-black bg-danger rounded text-center">12 / 12</h4>
+            <p class="text-white">Experiência</p>
+            <h4 class="text-black bg-info rounded text-center">0 / 300</h4>
+          </div>
+          <div class="card-body row d-flex justify-content-center">
+            <div>
+              <p class="text-white">Armadura</p>
+              <h4 class="text-black cinza rounded text-center">16</h4>
+            </div>
+            <div class='offset-1'>
+              <p class="text-white">Dado Vida</p>
+              <h4 class="text-black bg-success rounded text-center">1d8</h4>
+            </div>
+            <div class='offset-1'>
+              <p class="text-white">Nivel</p>
+              <h4 class="text-black bg-primary rounded text-center">1</h4>
+            </div>
+            <div class='offset-1'>
+              <p class="text-white">Iniciativa</p>
+              <h4 class="text-white vermelho rounded text-center">20</h4>
+            </div>
+            <div class='offset-1'>
+              <p class="text-white">Proficiencia</p>
+              <h4 class="text-black seila rounded text-center">+2</h4>
+            </div>
+          </div>
         </div>
-    </header>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
